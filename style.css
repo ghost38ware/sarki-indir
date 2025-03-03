@@ -1,0 +1,135 @@
+
+body {
+    background-color: #2c2c2c;
+    color: white;
+    font-family: 'Agbalumo', sans-serif;
+    text-align: center; 
+}
+
+
+.banner {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Profil kutularını yatay olarak hizalar */
+.profile-container {
+    display: flex; /* Kutuları yan yana dizer */
+    justify-content: center; /* Ortalar */
+    gap: 20px; /* Kutular arasına boşluk ekler */
+    margin-top: 20px;
+}
+
+
+.profile-box, .note-box {
+    background-color: #444; /* Koyu gri arka plan */
+    padding: 20px;
+    border-radius: 10px; /* Kenarları yuvarlatır */
+    width: 250px;
+    border: 2px solid #4800ff; /* Mavi kenarlık */
+    box-shadow: 0px 0px 10px 2px #4800ff; /* Mavi gölge efekti */
+}
+
+/* Profil resimlerinin aynı boyutta olmasını sağlar */
+.profile-box img {
+    width: 150px;  /* Genişliği sabitler */
+    height: 150px; /* Yüksekliği sabitler */
+    border-radius: 50%; /* Yuvarlak şekil korur */
+    object-fit: cover; /* Resmin çerçeveye tam oturmasını sağlar */
+}
+
+.note-box {
+    background-color: #444; /* Koyu kırmızı arka plan */
+    color: red; /* Beyaz yazı */
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif; /* Normal yazı tipi */
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #ff0000; /* Kırmızı kenarlık */
+    box-shadow: 0px 0px 10px 2px #ff0000; /* Kırmızı gölge efekti */
+}
+
+.youtube-button {
+    display: inline-block;
+    background-color: red; 
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+     box-shadow: 0px 0px 10px 2px #ff0000;
+    text-decoration: none; /* Altı çizili olmasın */
+    border-radius: 5px; /* Köşeleri yuvarlak */
+}
+
+
+.songs-section {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0px 0px 10px 2px #A200FF;
+    border: 2px solid #4800ff;
+    text-align: center;
+}
+.songs-info {
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+
+/* Şarkı kutularını düzenler */
+.songs-container {
+    display: flex; /* Şarkıları yatay hizalar */
+    flex-wrap: wrap; /* Satır dolduğunda alttan devam etmesini sağlar */
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.song-item {
+    width: 23%; /* 3 tane yan yana sığsın */
+    background: #444;
+    padding: 25px;
+    border-radius: 7px;
+    text-align: left;
+    color: white;
+    box-shadow: 0px 0px 10px 2px #4800ff;
+    border: 2px solid #4800ff;
+}
+
+.audio-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+audio {
+    width: 70%;
+}
+.download-button {
+    padding: 8px 12px;
+    background-color:#4800ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px 2px  #A200FF;
+    white-space: nowrap; /* Metnin taşmasını önler */
+}
+
+/* İndir butonunun üzerine gelince rengi değişsin */
+.download-button:hover {
+    box-shadow: 0px 0px 10px 2px #A200FF;
+    background-color: #6a00ff;
+}
